@@ -22,16 +22,22 @@
   ========================================
   1. General Styles
   ========================================
+  
 */
+/* @import url('https://fonts.googleapis.com/css?family=Rammetto+One'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900'); */
+/* @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display'); */
+/* @import url('https://fonts.googleapis.com/css?family=Fjalla+One'); */
 @import url('https://fonts.googleapis.com/css?family=Lekton:400,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|PT+Mono');
 @font-face {
   font-family: 'BaronNeue';
-  src: url('/css/fonts/BaronNeue.otf');
+  src: url('/public/css/fonts/BaronNeue.otf');
 }
 @font-face {
   font-family: 'BaronNeueBlack';
-  src: url('/css/fonts/BaronNeueBlack.otf');
+  src: url('/public/css/fonts/BaronNeueBlack.otf');
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
@@ -187,10 +193,14 @@ a:hover {
 }
 .main-heading {
   color: white;
-  font-size: 3.5rem;
-  font-weight: 900;
+  font-size: 5rem;
+  font-weight: 700;
+  /* text-transform: uppercase; */
   /* font-size: 4.5rem;
   font-weight: 900; */
+
+  /* font-family: 'Rammetto One', cursive; */
+  /* font-family: 'Montserrat Subrayada', sans-serif; */
   font-family: 'BaronNeueBlack';
 }
 .second-hed {
@@ -274,8 +284,8 @@ footer > button:focus {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .main-heading {
-    font-size: 4.5rem;
-    font-weight: 900;
+    /* font-size: 9.5rem; */
+    /* font-weight: 900; */
   }
   .second-hed {
     font-size: 1.7rem;
