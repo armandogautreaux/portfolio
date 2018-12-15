@@ -428,13 +428,16 @@ $('.menu__linkContact').hover(function() {
     )
     .addClass('about-inner-text');
 
-  var formContent = $('<form>').addClass('mt-3');
+  var formContent = $('<form>')
+    .addClass('mt-3')
+    .attr('id', 'contact-form');
 
   var nameFormGroup = $('<div>')
     .addClass('form-group pt-0 mt-0')
     .append(
       $('<input>')
         .attr('type', 'text')
+        .attr('name', 'name')
         .attr('placeholder', 'Name')
         .addClass('form-control')
     );
@@ -443,6 +446,7 @@ $('.menu__linkContact').hover(function() {
     .append(
       $('<input>')
         .attr('type', 'email')
+        .attr('name', 'email')
         .attr('placeholder', 'Email')
         .addClass('form-control')
     );
@@ -452,6 +456,7 @@ $('.menu__linkContact').hover(function() {
     .append(
       $('<input>')
         .attr('type', 'text')
+        .attr('name', 'subject')
         .attr('placeholder', 'Topic')
         .addClass('form-control')
     );
@@ -461,11 +466,14 @@ $('.menu__linkContact').hover(function() {
     .append(
       $('<textarea>')
         .attr('type', 'text')
+        .attr('name', 'message')
         .attr('placeholder', 'Message')
         .addClass('form-control')
     );
   var buttonFooter = $('<button>')
     .addClass('btn btn-secondary mt-3 btn-block')
+    .attr('type', 'submit')
+    .attr('name', 'submit')
     .text('SUBMIT');
   var altMsg = $('<small>')
     .text('For other inquieries, reach out to info@armandogautreaux.com')
@@ -475,7 +483,8 @@ $('.menu__linkContact').hover(function() {
 
     emailFormGroup,
     topic,
-    textFormGroup
+    textFormGroup,
+    buttonFooter
   );
   formDiv.append(
     headingText,
@@ -483,10 +492,50 @@ $('.menu__linkContact').hover(function() {
     // secondHeading,
     // emailheading,
     formContent,
-    buttonFooter,
     altMsg
   );
 
   $('.overlay-content-section').css('background-color', 'white');
   $('.overlay-content-section').append(formDiv);
+});
+
+$('#contact-form').submit(event => {
+  event.preventDefault();
+  if ($('[name="name"]').val() == '') {
+    alert('Please enter your Full Name');
+  } else if ($('email').val() == '') {
+    alert('Please enter your a valid email');
+  } else {
+    const newContact = {
+      name: $('[name="name"]')
+        .val()
+        .trim(),
+      email: $('[name="email"]')
+        .val()
+        .trim(),
+      subject: $('[name="subject"]')
+        .val()
+        .trim(),
+      message: $('[name="message"]')
+        .val()
+        .trim()
+    };
+
+    //4. We call our post (ajax) method to send our object to the back-end
+    $.post('/send', newContact).done(function(data) {
+      //After our back-end receive the object and proccess its logic, send back the data to display to the user
+      if (data) {
+        $('[name="name"]').val(''),
+          $('[name="email"]').val(''),
+          $('[name="subject"]').val(''),
+          $('[name="message"]').val('');
+
+        //If our logic was correct, the next info is gonna be displayed to the user through the hidden Boostrap modal
+        $('#contactModal').modal('hide');
+        // $('#contactModal').toggle();
+        $('#myModal').modal('toggle');
+        $('#modalBody').text('Name: ' + data.name);
+      }
+    });
+  }
 });
