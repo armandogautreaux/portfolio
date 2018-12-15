@@ -430,7 +430,7 @@ $('.menu__linkContact').hover(function() {
 
   var formContent = $('<form>')
     .addClass('mt-3')
-    .attr('id', 'contact-form');
+    .attr('id', 'contact-form2');
 
   var nameFormGroup = $('<div>')
     .addClass('form-group pt-0 mt-0')
@@ -500,6 +500,47 @@ $('.menu__linkContact').hover(function() {
 });
 
 $('#contact-form').submit(event => {
+  event.preventDefault();
+  if ($('[name="name"]').val() == '') {
+    alert('Please enter your Full Name');
+  } else if ($('email').val() == '') {
+    alert('Please enter your a valid email');
+  } else {
+    const newContact = {
+      name: $('[name="name"]')
+        .val()
+        .trim(),
+      email: $('[name="email"]')
+        .val()
+        .trim(),
+      subject: $('[name="subject"]')
+        .val()
+        .trim(),
+      message: $('[name="message"]')
+        .val()
+        .trim()
+    };
+
+    //4. We call our post (ajax) method to send our object to the back-end
+    $.post('/send', newContact).done(function(data) {
+      //After our back-end receive the object and proccess its logic, send back the data to display to the user
+      if (data) {
+        $('[name="name"]').val(''),
+          $('[name="email"]').val(''),
+          $('[name="subject"]').val(''),
+          $('[name="message"]').val('');
+
+        //If our logic was correct, the next info is gonna be displayed to the user through the hidden Boostrap modal
+        $('#contactModal').modal('hide');
+        // $('#contactModal').toggle();
+        $('#myModal').modal('toggle');
+        $('#modalBody').text('Name: ' + data.name);
+      }
+    });
+  }
+});
+
+$(document).on('submit', '#contact-form2', event => {
   event.preventDefault();
   if ($('[name="name"]').val() == '') {
     alert('Please enter your Full Name');
