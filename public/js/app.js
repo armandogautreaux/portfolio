@@ -1,115 +1,115 @@
-particlesJS('particles-js', {
-  particles: {
-    number: { value: 80, density: { enable: true, value_area: 800 } },
-    color: { value: '#fff' },
-    shape: {
-      type: 'circle',
-      stroke: { width: 0, color: '#000000' },
-      polygon: { nb_sides: 5 },
-      image: { src: 'img/github.svg', width: 100, height: 100 }
-    },
-    opacity: {
-      value: 0.5,
-      random: false,
-      anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
-    },
-    size: {
-      value: 3,
-      random: true,
-      anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: '#ffffff',
-      opacity: 0.4,
-      width: 1
-    },
-    move: {
-      enable: true,
-      speed: 6,
-      direction: 'none',
-      random: false,
-      straight: false,
-      out_mode: 'out',
-      bounce: false,
-      attract: { enable: false, rotateX: 600, rotateY: 1200 }
-    }
-  },
-  interactivity: {
-    detect_on: 'canvas',
-    events: {
-      onhover: { enable: true, mode: 'repulse' },
-      onclick: { enable: true, mode: 'push' },
-      resize: true
-    },
-    modes: {
-      grab: { distance: 400, line_linked: { opacity: 1 } },
-      bubble: {
-        distance: 400,
-        size: 40,
-        duration: 2,
-        opacity: 8,
-        speed: 3
-      },
-      repulse: { distance: 200, duration: 0.4 },
-      push: { particles_nb: 4 },
-      remove: { particles_nb: 2 }
-    }
-  },
-  retina_detect: true
-});
+// // particlesJS('particles-js', {
+// //   particles: {
+// //     number: { value: 80, density: { enable: true, value_area: 800 } },
+// //     color: { value: '#fff' },
+// //     shape: {
+// //       type: 'circle',
+// //       stroke: { width: 0, color: '#000000' },
+// //       polygon: { nb_sides: 5 },
+// //       image: { src: 'img/github.svg', width: 100, height: 100 }
+// //     },
+// //     opacity: {
+// //       value: 0.5,
+// //       random: false,
+// //       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+// //     },
+// //     size: {
+// //       value: 3,
+// //       random: true,
+// //       anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+// //     },
+// //     line_linked: {
+// //       enable: true,
+// //       distance: 150,
+// //       color: '#ffffff',
+// //       opacity: 0.4,
+// //       width: 1
+// //     },
+// //     move: {
+// //       enable: true,
+// //       speed: 6,
+// //       direction: 'none',
+// //       random: false,
+// //       straight: false,
+// //       out_mode: 'out',
+// //       bounce: false,
+// //       attract: { enable: false, rotateX: 600, rotateY: 1200 }
+// //     }
+// //   },
+// //   interactivity: {
+// //     detect_on: 'canvas',
+// //     events: {
+// //       onhover: { enable: true, mode: 'repulse' },
+// //       onclick: { enable: true, mode: 'push' },
+// //       resize: true
+// //     },
+// //     modes: {
+// //       grab: { distance: 400, line_linked: { opacity: 1 } },
+// //       bubble: {
+// //         distance: 400,
+// //         size: 40,
+// //         duration: 2,
+// //         opacity: 8,
+// //         speed: 3
+// //       },
+// //       repulse: { distance: 200, duration: 0.4 },
+// //       push: { particles_nb: 4 },
+// //       remove: { particles_nb: 2 }
+// //     }
+// //   },
+// //   retina_detect: true
+// // });
 
-(function() {
-  var Menu = (function() {
-    var burger = document.querySelector('.burger');
-    var menu = document.querySelector('.overlay-window');
-    var menuList = document.querySelector('.menu__list');
-    var brand = document.querySelector('.overlay-content-section');
-    var menuItems = document.querySelectorAll('.menu__item');
+// (function() {
+//   var Menu = (function() {
+//     var burger = document.querySelector('.burger');
+//     var menu = document.querySelector('.overlay-window');
+//     var menuList = document.querySelector('.menu__list');
+//     var brand = document.querySelector('.overlay-content-section');
+//     var menuItems = document.querySelectorAll('.menu__item');
 
-    var active = false;
+//     var active = false;
 
-    var toggleMenu = function() {
-      if (!active) {
-        menu.classList.add('overlay-window--active');
-        menuList.classList.add('menu__list--active');
-        brand.classList.add('overlay-content-section--active');
-        burger.classList.add('burger--close');
-        for (var i = 0, ii = menuItems.length; i < ii; i++) {
-          menuItems[i].classList.add('menu__item--active');
-        }
-        active = true;
-      } else {
-        menu.classList.remove('overlay-window--active');
-        menuList.classList.remove('menu__list--active');
-        brand.classList.remove('overlay-content-section--active');
-        burger.classList.remove('burger--close');
-        for (var i = 0, ii = menuItems.length; i < ii; i++) {
-          menuItems[i].classList.remove('menu__item--active');
-        }
+//     var toggleMenu = function() {
+//       if (!active) {
+//         menu.classList.add('overlay-window--active');
+//         menuList.classList.add('menu__list--active');
+//         brand.classList.add('overlay-content-section--active');
+//         burger.classList.add('burger--close');
+//         for (var i = 0, ii = menuItems.length; i < ii; i++) {
+//           menuItems[i].classList.add('menu__item--active');
+//         }
+//         active = true;
+//       } else {
+//         menu.classList.remove('overlay-window--active');
+//         menuList.classList.remove('menu__list--active');
+//         brand.classList.remove('overlay-content-section--active');
+//         burger.classList.remove('burger--close');
+//         for (var i = 0, ii = menuItems.length; i < ii; i++) {
+//           menuItems[i].classList.remove('menu__item--active');
+//         }
 
-        active = false;
-      }
-    };
+//         active = false;
+//       }
+//     };
 
-    var bindActions = function() {
-      burger.addEventListener('click', toggleMenu, false);
-    };
+//     var bindActions = function() {
+//       burger.addEventListener('click', toggleMenu, false);
+//     };
 
-    var init = function() {
-      bindActions();
-    };
+//     var init = function() {
+//       bindActions();
+//     };
 
-    return {
-      init: init
-    };
-  })();
+//     return {
+//       init: init
+//     };
+//   })();
 
-  Menu.init();
-})();
-//Change the content of the white display according to the element hover
-//
+//   Menu.init();
+// })();
+// //Change the content of the white display according to the element hover
+// //
 
 var numberPage = $('.number-page');
 var ProjectName = $('.ProjectName');
@@ -120,13 +120,17 @@ var img3 = $('.img-inner3');
 var textInner = $('.text-container-inner ');
 var btn1 = $('.under-1');
 var btn2 = $('.under-2');
-var srcimg = ['/images/img01.jpg', '/images/img2.jpg', '/images/img03.jpg'];
+// var srcimg = ['/images/img01.jpg', '/images/img2.jpg', '/images/img03.jpg'];
 
 var project1 = {
   page: 01,
   name: 'organic Fitness World',
   info: 'ONLINE STORE - 2018',
-  imgs: ['/images/img01.jpg', '/images/img02.jpg', '/images/img03.jpg'],
+  imgs: [
+    'public/images/img01.jpg',
+    'public/images/img02.jpg',
+    'public/images/img03.jpg'
+  ],
   text:
     'Online Store specialized in organic products for athlets such as groceries, supplements and clothing. This full stack app features: MongoDB, Express, React, Redux, NodeJS, Sass, ReactStrap, and Passport JWT.',
   hrefS: [
@@ -139,7 +143,11 @@ var project2 = {
   page: 02,
   name: 'FlyAway',
   info: 'Airline App - 2018',
-  imgs: ['/images/img04.jpg', '/images/img05.jpg', '/images/img06.jpg'],
+  imgs: [
+    'public/images/img04.jpg',
+    'public/images/img05.jpg',
+    'public/images/img06.jpg'
+  ],
   text:
     'Full-Stack App  that accomplishes most common functions of a local Airline Company such as booking tickets, see reservations, cancel tickets and, search for an specific flight status. This App feautures MySQL, Handlebars, Node.Js, Express.JS and BodyParser.',
   hrefS: [
@@ -151,7 +159,11 @@ var project3 = {
   page: 03,
   name: 'Newstaker',
   info: 'Scraper - 2018',
-  imgs: ['/images/img07.jpg', '/images/img08.jpg', '/images/img09.jpg'],
+  imgs: [
+    'public/images/img07.jpg',
+    'public/images/img08.jpg',
+    'public/images/img09.jpg'
+  ],
   text:
     "This Full-Stack App let users view and leave comments on the latest news. Newstaker uses Mongoose and Cheerio to scrape news from the NYTimes and storage them in it's own database.",
   hrefS: [
@@ -163,7 +175,11 @@ var project4 = {
   page: 04,
   name: 'Eat-Da-Burger!',
   info: 'HandleBars - 2018',
-  imgs: ['/images/img10.jpg', '/images/img11.jpg', '/images/img12.jpg'],
+  imgs: [
+    'public/images/img10.jpg',
+    'public/images/img11.jpg',
+    'public/images/img12.jpg'
+  ],
   text:
     "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app displays the burger on the left side of the page -- waiting to be devoured. The app stores every burger in a database, whether devoured or not. This app features MySQL, Node, Express and Handlebars.",
   hrefS: [
@@ -175,7 +191,11 @@ var project5 = {
   page: 05,
   name: 'FriendFinder',
   info: 'ExpressJs - 2018',
-  imgs: ['/images/img13.jpg', '/images/img14.jpg', '/images/img15.jpg'],
+  imgs: [
+    'public/images/img13.jpg',
+    'public/images/img14.jpg',
+    'public/images/img15.jpg'
+  ],
   text:
     "FriendFinder is basically a dating app. This full-stack site takes in results from ther users' surveys, then compare their answers with those from other users. The app will then display the name of the user with the best overall match.",
   hrefS: [
@@ -187,7 +207,11 @@ var project6 = {
   page: 06,
   name: 'Bamazon',
   info: 'MySQL/Databases - 2018',
-  imgs: ['/images/img16.jpg', '/images/img17.jpg', '/images/img18.jpg'],
+  imgs: [
+    'public/images/img16.jpg',
+    'public/images/img17.jpg',
+    'public/images/img18.jpg'
+  ],
   text:
     "Bamazon is an Amazon-like storefront that runs with MySQL as Database. The app takes in orders from customers and deplete stock from the store's inventory.",
   hrefS: [
@@ -199,7 +223,11 @@ var project7 = {
   page: 07,
   name: 'Train-Scheduler',
   info: 'Firebase/Moment.js - 2018',
-  imgs: ['/images/img19.jpg', '/images/img20.jpg', '/images/img21.jpg'],
+  imgs: [
+    'public/images/img19.jpg',
+    'public/images/img20.jpg',
+    'public/images/img21.jpg'
+  ],
   text:
     'Train-Scheduler is an application that incorporates Firebase to host arrival and departure data. The app retrieves and manipulates this information with Moment.js. This website provides up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.',
   hrefS: [
@@ -211,7 +239,11 @@ var project8 = {
   page: 08,
   name: 'GifTastic',
   info: 'API Calls - 2018',
-  imgs: ['/images/img22.jpg', '/images/img23.jpg', '/images/img24.jpg'],
+  imgs: [
+    'public/images/img22.jpg',
+    'public/images/img23.jpg',
+    'public/images/img24.jpg'
+  ],
   text:
     'GifTastic is a JS App that uses the GIPHY API to make a dynamic web page that populates with gifs of your choice. In this App we call the GIPHY API and use JavaScript and jQuery to change the HTML of this site.',
   hrefS: [
@@ -223,7 +255,11 @@ var project9 = {
   page: 09,
   name: 'TriviaGame',
   info: 'JSTimer - 2018',
-  imgs: ['/images/img25.jpg', '/images/img26.jpg', '/images/img27.jpg'],
+  imgs: [
+    'public/images/img25.jpg',
+    'public/images/img26.jpg',
+    'public/images/img27.jpg'
+  ],
   text:
     'Trivia Game is an App that uses JavaScript for the logic and jQuery to manipulate HTML. In this game, the App creates a trivia form with multiple choice or true/false options, from where the player will have a limited amount of time to choose from. The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.',
   hrefS: [
@@ -235,7 +271,11 @@ var project10 = {
   page: 10,
   name: 'Crystal Collector',
   info: 'jQuery Game - 2018',
-  imgs: ['/images/img28.jpg', '/images/img29.jpg', '/images/img30.jpg'],
+  imgs: [
+    'public/images/img28.jpg',
+    'public/images/img29.jpg',
+    'public/images/img30.jpg'
+  ],
   text:
     "Cristal Collector is a jQuery Game that dynamically update the HTML pages. In this App, there will be four crystals displayed as buttons on the page, the player will be shown a random number at the start of the game, when the player clicks on a crystal, it will add a specific amount of points to the player's total score. The player wins if their total score matches the random number from the beginning of the game.",
   hrefS: [

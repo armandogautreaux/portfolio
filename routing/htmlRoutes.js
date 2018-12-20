@@ -9,12 +9,21 @@ const { EMAIL_USER, EMAIL_PASS, EMAIL_SEND } = process.env;
 //Export routes to serves.js
 module.exports = function(app) {
   app.get('/', (req, res) => {
-    res.render('main');
+    res.render('index');
   });
 
+  app.get('/about', (req, res) => {
+    res.render('about');
+  });
+  app.get('/portfolio', (req, res) => {
+    res.render('portfolio');
+  });
+  app.get('/contact', (req, res) => {
+    res.render('contact');
+  });
   // If no matching route is found default to home
   app.get('*', (req, res) => {
-    res.render('main');
+    res.render('index');
   });
   // POST route from contact form
   app.post('/send', (req, res) => {
