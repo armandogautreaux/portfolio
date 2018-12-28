@@ -173,8 +173,8 @@ a:hover {
 .paragraph-inner {
   font-weight: 100;
   letter-spacing: 2px;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
   color: #ffffff;
 }
 
@@ -262,8 +262,9 @@ a:hover {
   letter-spacing: 1px;
 }
 .text-container-inner {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2rem;
+  font-size: 0.7rem;
   font-weight: 300;
   color: white;
   letter-spacing: 1px;
@@ -422,10 +423,10 @@ textarea.form-control::-webkit-input-placeholder {
   color: rgb(255, 255, 255);
   position: absolute;
   right: 20px;
-  top: 100px;
+  top: 110px;
   z-index: 10;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
 }
