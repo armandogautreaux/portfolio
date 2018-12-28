@@ -1,116 +1,3 @@
-// // particlesJS('particles-js', {
-// //   particles: {
-// //     number: { value: 80, density: { enable: true, value_area: 800 } },
-// //     color: { value: '#fff' },
-// //     shape: {
-// //       type: 'circle',
-// //       stroke: { width: 0, color: '#000000' },
-// //       polygon: { nb_sides: 5 },
-// //       image: { src: 'img/github.svg', width: 100, height: 100 }
-// //     },
-// //     opacity: {
-// //       value: 0.5,
-// //       random: false,
-// //       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
-// //     },
-// //     size: {
-// //       value: 3,
-// //       random: true,
-// //       anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
-// //     },
-// //     line_linked: {
-// //       enable: true,
-// //       distance: 150,
-// //       color: '#ffffff',
-// //       opacity: 0.4,
-// //       width: 1
-// //     },
-// //     move: {
-// //       enable: true,
-// //       speed: 6,
-// //       direction: 'none',
-// //       random: false,
-// //       straight: false,
-// //       out_mode: 'out',
-// //       bounce: false,
-// //       attract: { enable: false, rotateX: 600, rotateY: 1200 }
-// //     }
-// //   },
-// //   interactivity: {
-// //     detect_on: 'canvas',
-// //     events: {
-// //       onhover: { enable: true, mode: 'repulse' },
-// //       onclick: { enable: true, mode: 'push' },
-// //       resize: true
-// //     },
-// //     modes: {
-// //       grab: { distance: 400, line_linked: { opacity: 1 } },
-// //       bubble: {
-// //         distance: 400,
-// //         size: 40,
-// //         duration: 2,
-// //         opacity: 8,
-// //         speed: 3
-// //       },
-// //       repulse: { distance: 200, duration: 0.4 },
-// //       push: { particles_nb: 4 },
-// //       remove: { particles_nb: 2 }
-// //     }
-// //   },
-// //   retina_detect: true
-// // });
-
-// (function() {
-//   var Menu = (function() {
-//     var burger = document.querySelector('.burger');
-//     var menu = document.querySelector('.overlay-window');
-//     var menuList = document.querySelector('.menu__list');
-//     var brand = document.querySelector('.overlay-content-section');
-//     var menuItems = document.querySelectorAll('.menu__item');
-
-//     var active = false;
-
-//     var toggleMenu = function() {
-//       if (!active) {
-//         menu.classList.add('overlay-window--active');
-//         menuList.classList.add('menu__list--active');
-//         brand.classList.add('overlay-content-section--active');
-//         burger.classList.add('burger--close');
-//         for (var i = 0, ii = menuItems.length; i < ii; i++) {
-//           menuItems[i].classList.add('menu__item--active');
-//         }
-//         active = true;
-//       } else {
-//         menu.classList.remove('overlay-window--active');
-//         menuList.classList.remove('menu__list--active');
-//         brand.classList.remove('overlay-content-section--active');
-//         burger.classList.remove('burger--close');
-//         for (var i = 0, ii = menuItems.length; i < ii; i++) {
-//           menuItems[i].classList.remove('menu__item--active');
-//         }
-
-//         active = false;
-//       }
-//     };
-
-//     var bindActions = function() {
-//       burger.addEventListener('click', toggleMenu, false);
-//     };
-
-//     var init = function() {
-//       bindActions();
-//     };
-
-//     return {
-//       init: init
-//     };
-//   })();
-
-//   Menu.init();
-// })();
-// //Change the content of the white display according to the element hover
-// //
-
 var numberPage = $('.number-page');
 var ProjectName = $('.ProjectName');
 var yearText = $('.text-container-inner-plus');
@@ -123,8 +10,7 @@ var btn2 = $('.under-2');
 // var srcimg = ['/images/img01.jpg', '/images/img2.jpg', '/images/img03.jpg'];
 
 var project1 = {
-  page: 01,
-  name: 'organic Fitness World',
+  name: 'Organic Fitness World',
   info: 'ONLINE STORE - 2018',
   imgs: [
     'public/images/img01.jpg',
@@ -140,7 +26,6 @@ var project1 = {
 };
 
 var project2 = {
-  page: 02,
   name: 'FlyAway',
   info: 'Airline App - 2018',
   imgs: [
@@ -156,7 +41,6 @@ var project2 = {
   ]
 };
 var project3 = {
-  page: 03,
   name: 'Newstaker',
   info: 'Scraper - 2018',
   imgs: [
@@ -172,7 +56,6 @@ var project3 = {
   ]
 };
 var project4 = {
-  page: 04,
   name: 'Eat-Da-Burger!',
   info: 'HandleBars - 2018',
   imgs: [
@@ -188,7 +71,6 @@ var project4 = {
   ]
 };
 var project5 = {
-  page: 05,
   name: 'FriendFinder',
   info: 'ExpressJs - 2018',
   imgs: [
@@ -204,7 +86,6 @@ var project5 = {
   ]
 };
 var project6 = {
-  page: 06,
   name: 'Bamazon',
   info: 'MySQL/Databases - 2018',
   imgs: [
@@ -220,7 +101,6 @@ var project6 = {
   ]
 };
 var project7 = {
-  page: 07,
   name: 'Train-Scheduler',
   info: 'Firebase/Moment.js - 2018',
   imgs: [
@@ -236,7 +116,6 @@ var project7 = {
   ]
 };
 var project8 = {
-  page: 08,
   name: 'GifTastic',
   info: 'API Calls - 2018',
   imgs: [
@@ -252,7 +131,6 @@ var project8 = {
   ]
 };
 var project9 = {
-  page: 09,
   name: 'TriviaGame',
   info: 'JSTimer - 2018',
   imgs: [
@@ -268,7 +146,6 @@ var project9 = {
   ]
 };
 var project10 = {
-  page: 10,
   name: 'Crystal Collector',
   info: 'jQuery Game - 2018',
   imgs: [
@@ -286,19 +163,15 @@ var project10 = {
 function setNewValues(project) {
   $('.overlay-content-section').empty();
 
-  var pageNum = $('<h5>')
-    .text(project.page)
-    .addClass('text-right number-page');
-  var containerText = $('<div>').addClass('container-text');
   var projectName = $('<h2>')
     .text(project.name)
-    .addClass('ProjectName');
+    .addClass('ProjectName mt-5');
   var subtitle = $('<p>')
     .text(project.info)
-    .addClass('subtitle mt-2 mb-5 mr-5');
+    .addClass('subtitle mb-4');
   var textContent = $('<p>')
     .text(project.text)
-    .addClass('text-container-inner mt-5  mb-3');
+    .addClass('text-container-inner mt-1 mb-4');
 
   var gallery = $('<div>').addClass('gallery');
   var img1 = $('<img>')
@@ -318,10 +191,9 @@ function setNewValues(project) {
   showImgToggle = $('<a>')
     .attr('id', 'btn-display')
     .attr('href', '#')
-    .text('Show Images')
-    .addClass('mt-5');
+    .text('Show Images');
 
-  var leftUl = $('<ul>').addClass('links-port mb-5');
+  var leftUl = $('<ul>').addClass('links-port text-right');
   var link1 = $('<li>').addClass('link-under-2');
   var link2 = $('<li>').addClass('link-under-1');
   var link1Inner = $('<a>')
@@ -337,7 +209,7 @@ function setNewValues(project) {
   link1.append(link1Inner);
   link2.append(link2Inner);
   leftUl.append(link1, link2);
-  containerText.append(
+  $('.overlay-content-section').append(
     projectName,
     subtitle,
     textContent,
@@ -345,8 +217,6 @@ function setNewValues(project) {
     showImgToggle,
     leftUl
   );
-
-  $('.overlay-content-section').append(pageNum, containerText);
 }
 
 $('.menu__link1').hover(function() {
@@ -571,52 +441,57 @@ $('#contact-form').submit(event => {
           $('[name="message"]').val('');
 
         //If our logic was correct, the next info is gonna be displayed to the user through the hidden Boostrap modal
-        $('#contactModal').modal('hide');
+        // $('#contactModal').modal('hide');
         // $('#contactModal').toggle();
         $('#myModal').modal('toggle');
-        $('#modalBody').text('Name: ' + data.name);
+        $('#modalBody').text(
+          'Dear ' +
+            data.name +
+            ', thank you for contact me, I have received your menssage. As early as possible I will get back to you.'
+        );
       }
     });
   }
 });
 
-$(document).on('submit', '#contact-form2', event => {
-  event.preventDefault();
-  if ($('[name="name"]').val() == '') {
-    alert('Please enter your Full Name');
-  } else if ($('email').val() == '') {
-    alert('Please enter your a valid email');
+$(document.body).on('click', '.closing-toggle', function() {
+  var state = $(this).attr('data-state');
+
+  if (state === 'open') {
+    $('.right-test').hide();
+    $(this).text('Projects  ');
+    var icon = $('<i>');
+    icon.addClass('fas');
+    icon.addClass('fa-external-link-alt');
+    $(this).append(icon);
+    $(this).attr('data-state', 'close');
   } else {
-    const newContact = {
-      name: $('[name="name"]')
-        .val()
-        .trim(),
-      email: $('[name="email"]')
-        .val()
-        .trim(),
-      subject: $('[name="subject"]')
-        .val()
-        .trim(),
-      message: $('[name="message"]')
-        .val()
-        .trim()
-    };
-
-    //4. We call our post (ajax) method to send our object to the back-end
-    $.post('/send', newContact).done(function(data) {
-      //After our back-end receive the object and proccess its logic, send back the data to display to the user
-      if (data) {
-        $('[name="name"]').val(''),
-          $('[name="email"]').val(''),
-          $('[name="subject"]').val(''),
-          $('[name="message"]').val('');
-
-        //If our logic was correct, the next info is gonna be displayed to the user through the hidden Boostrap modal
-        $('#contactModal').modal('hide');
-        // $('#contactModal').toggle();
-        $('#myModal').modal('toggle');
-        $('#modalBody').text('Name: ' + data.name);
-      }
-    });
+    $('.right-test').show();
+    var icon = $('<i>');
+    $(this).text('');
+    icon.addClass('fas');
+    icon.addClass('fa-times');
+    $(this).append(icon);
+    $(this).attr('data-state', 'open');
   }
+});
+
+function checkWidth(init) {
+  if ($(window).width() < 768) {
+    $('.footer-ul').addClass('justify-content-center');
+  } else {
+    if (!init) {
+      $('.footer-ul').removeClass('justify-content-center');
+      $('.container-footer').removeClass('d-flex');
+      // $('.margin-left-auto').addClass('ml-auto');
+      $('.container-footer').addClass('px-0');
+      $('.navlink-1-bo').addClass('ml-0 pl-0');
+    }
+  }
+}
+
+checkWidth(true);
+
+$(window).resize(function() {
+  checkWidth(false);
 });

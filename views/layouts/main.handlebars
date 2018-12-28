@@ -9,8 +9,11 @@
   <title>Armando Gautreaux's Portfolio</title>
 
   <!-- MAIN CSS FILES -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous" />
+  <link rel="shortcut icon" href="/public/images/favicon.ico" />
+  <link rel="icon" type="image/png" href="/public/images/favicon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/images/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 
@@ -20,111 +23,86 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md  bg-white fixed-top py-4">
-    <div class="container-fluid">
-      <a href="index.html" class="navbar-brand">
-        <h5 class="d-inline align-middle ml-4">
-          <i class="fas fa-code"></i>
-        </h5>
+
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light py-4 bg-white flex-row container">
+
+    <!-- Left Icon -->
+    <span class="navbar-text d-none d-md-block">
+      <small class="left-icon-top">
+        <a href="/"><i class="fas fa-home"></i></a>
+      </small>
+    </span>
+
+    <!-- Brand -->
+    <a class="navbar-brand mx-md-auto mr-auto" href="/">
+      ARMANDO GAUTREAUX<small class="title py-0">PORTOLIO</small>
+    </a>
+
+    <!-- Right Icons -->
+    <div class="navbar-text d-none d-md-block right-icons-top">
+      <a href="https://github.com/armandogautreaux" class="mx-1" target="_blank">
+        <i class="fab fa-github-square"></i>
       </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span>
-          <i class="fas fa-bars"></i>
-        </span></button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="/index" class="nav-link">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a href="/about" class="nav-link">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a href="/portfolio" class="nav-link">PROJECTS</a>
-          </li>
-          <li class="nav-item mr-4">
-            <a href="/contact" class="nav-link">CONTACT</a>
-          </li>
-        </ul>
-      </div>
+      <a href="https://www.linkedin.com/in/armando-gautreaux-78932059/" class="mx-1" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <button class="navbar-toggler ml-lg-0" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- Bottom Navbar -->
+  <nav class="navbar p-0  navbar-expand-md navbar-light bg-white second-nav container">
+    <div class="collapse navbar-collapse   px-3" id="navbarContent">
+      <ul class="navbar-nav mx-md-auto mx-0 w-50 align-items-start nav-fill">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/portfolio">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
+
   {{{ body }}}
 
+  <!-- Footer -->
+  <footer class="bg-white footer py-4">
+    <div class="container container-footer d-flex">
+      <ul class="nav footer-ul pl-0">
+        <li class="nav-item footer-li order-last order-md-first ">
+          <small class="nav-link navlink-bo-1 pl-0">
+            &copy; <span id="year"></span> Designed & Developed by Armando Gautreaux.
+          </small>
+        </li>
 
-  <footer class="bg-white py-4  text-center fixed-bottom">
+        <li class="nav-item d-none d-md-block footer-li ml-auto">
+          <a class="nav-link" href="https://www.linkedin.com/in/armando-gautreaux-78932059/" target="_blank"> Privacy
+            Policy</a>
+        </li>
 
-    <smal class="text-black pt-2">
-      Copyright 2019 - Design and Developed by Armando Gautreaux powered by Heroku.
-      </small>
-
-      <a href="https://www.linkedin.com/in/armando-gautreaux-78932059/" target="_blank">
-        {{!-- <i class="fab fa-linkedin"></i> --}}
-
-        <span>Linkedin</span></a>
-      <a href="https://github.com/armandogautreaux" class="ml-auto" target="_blank">
-        {{!-- <i class="fab fa-github mx-4"></i> --}}<span>Github</span>
-      </a>
-
-
-      {{!-- <button data-toggle="modal" data-target="#contactModal">
-        <i class="fas fa-envelope"></i>
-        <span>Contact</span>
-      </button> --}}
-
-
-
-  </footer>
-
-  <!-- MAIN FOOTER -->
-
-  <div class="modal fade text-dark" id="contactModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-        </div>
-        <div class="modal-body mt-0 pt-0 px-4">
-          <h5 class="modal-title mx-auto mt-0 pt-0" id="contactModalTitle">
-            Reach out
-          </h5>
-          <p class="about-inner-text">
-            I would like to hear from you. Please send me a message by filling
-            out the form bellow and I will get back to you shortly.
-          </p>
-          {{msg}}
-
-          <form class="mt-3" class="contact-form" id="contact-form">
-            <div class="form-group">
-              <input type="text" name="name" class="form-control" placeholder="Name" />
-            </div>
-            <div class="form-group">
-              <input type="email" name="email" class="form-control" placeholder="Email" />
-            </div>
-            <div class="form-group">
-              <input type="text" name="subject" class="form-control" placeholder="Subject" />
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" placeholder="Message"></textarea>
-            </div>
-
-            <div class="modal-footer">
-              <button type="submit" name="submit" value="Send Message" class="btn btn-secondary btn-block">
-                Submit
-              </button>
-          </form>
-        </div>
-
-      </div>
-      <small class="d-block mt-1  text-muted text-center pb-3">
-        For other inquieries, reach out to
-      </small>
+        <li class="nav-item footer-li">
+          <a class="nav-link" href="https://www.linkedin.com/in/armando-gautreaux-78932059/" target="_blank">Linkedin</a>
+        </li>
+        <li class="nav-item footer-li">
+          <a class="nav-link" href="https://github.com/armandogautreaux" target="_blank">Github</a>
+        </li>
+        <li class="nav-item footer-li mr-0 pr-0">
+          <a class="nav-link pr-0" href="/contact" target="_blank">Contact</a>
+        </li>
+      </ul>
     </div>
-  </div>
-
-
+  </footer>
 
 
 
@@ -133,14 +111,15 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">YOUR MESSAGE HAS BEEN SENT</h5>
           <button class="close" data-dismiss="modal">&times;</button>
         </div>
-        <div modal="modal-body">
-          <h1 id="modalBody"></h1>
+        <div modal="modal-body" class="pt-2 pb-4 px-4 text-center">
+          <h3 class="about-inner-text" id="modalBody"></h3>
         </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        <div modal="modal-footer" class="px-4 pb-2 text-center">
+          <h3 class="about-inner-text">Armando Gautreaux
+          </h3>
         </div>
       </div>
     </div>
@@ -153,9 +132,6 @@
     crossorigin="anonymous "></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
     crossorigin="anonymous "></script>
-
-
-
   <script src="/public/js/app.js"></script>
   <script>
     //Get the current year of the copyright
