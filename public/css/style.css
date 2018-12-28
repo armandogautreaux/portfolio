@@ -55,10 +55,7 @@ a:hover {
   letter-spacing: 2px;
   color: rgb(119, 119, 119);
   font-size: 7px;
-  /* padding: 5px; */
   display: block;
-  /*position: absolute;
-  top: 30px; */
 }
 
 .navbar-nav,
@@ -171,7 +168,7 @@ a:hover {
 }
 
 .paragraph-inner {
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 2px;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.6rem;
@@ -429,6 +426,9 @@ textarea.form-control::-webkit-input-placeholder {
   font-size: 0.9rem;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
+}
+.closing-toggle:hover {
+  color: rgb(255, 255, 255);
 }
 
 /* ---- 13. MEDIA QUERIES ----  */
