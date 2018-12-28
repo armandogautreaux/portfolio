@@ -155,7 +155,7 @@ a:hover {
 
 .main-content {
   background: linear-gradient(to right, #62aeb7 0%, #a7ebf6 100%);
-  min-height: 65vh;
+  min-height: 76vh;
 }
 .main-heading {
   color: #ffffff;
@@ -233,6 +233,9 @@ a:hover {
 }
 
 /* ---- PORTFOLIO----  */
+.portfolio {
+  min-height: 76vh;
+}
 
 .overlay-content-section img {
   width: 30%;
@@ -339,6 +342,9 @@ a:hover {
 }
 
 /* ----- CONTACT ---- */
+.contact-section {
+  margin-top: 40px;
+}
 
 .title-contact {
   font-family: 'Montserrat', sans-serif;
@@ -349,7 +355,7 @@ a:hover {
 }
 
 .right-1 {
-  height: auto;
+  min-height: 76vh;
   background-size: cover;
 }
 
