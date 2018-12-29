@@ -165,7 +165,7 @@ function setNewValues(project) {
 
   var projectName = $('<h2>')
     .text(project.name)
-    .addClass('ProjectName mt-5');
+    .addClass('ProjectName');
   var subtitle = $('<p>')
     .text(project.info)
     .addClass('subtitle mb-4');

@@ -46,16 +46,18 @@ a:hover {
 .navbar-brand {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
   color: #2e2e2e !important;
   letter-spacing: 2px;
 }
 .title {
   font-family: 'Lato', sans-serif;
   letter-spacing: 2px;
-  color: rgb(119, 119, 119);
-  font-size: 7px;
+  color: rgb(0, 0, 0);
+  font-size: 8px;
   display: block;
+  font-weight: 700;
+  position: absolute;
 }
 
 .navbar-nav,
@@ -94,8 +96,8 @@ a:hover {
 .fa-envelope,
 .fa-github-square,
 .fa-home {
-  color: rgb(185, 184, 184);
-  font-size: 1.2rem;
+  color: rgba(59, 59, 59, 0.459);
+  font-size: 1.3rem;
 }
 
 .second-nav {
@@ -111,8 +113,8 @@ a:hover {
 .footer {
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif !important;
-  color: #000000;
-  position: relative;
+  color: #a5a5a5;
+  position: absolute;
   left: 0px;
   bottom: 0px;
   width: 100%;
@@ -155,12 +157,13 @@ a:hover {
 
 .main-content {
   background: linear-gradient(to right, #62aeb7 0%, #a7ebf6 100%);
-  min-height: 76vh;
+  min-height: 86.7vh;
+  background-size: cover;
 }
 .main-heading {
   color: #ffffff;
   margin-top: 120px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -186,6 +189,7 @@ a:hover {
   text-transform: uppercase;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+  padding: 20px 0;
 }
 .btn-secondary-1 {
   background: transparent;
@@ -198,30 +202,33 @@ a:hover {
   margin-top: 10px;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+  padding: 20px 0;
 }
 
 /* ---- ABOUT ----  */
 .about-section {
   background: #fafafa;
   background-size: cover;
+  min-height: 86.7vh;
 }
 
 .about-section-inner {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  color: rgb(78, 78, 78);
-  line-height: 1.5rem;
-  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  line-height: 1.4rem;
+  letter-spacing: 0.8px;
 }
 .about-section-inner > img {
   border-radius: 50%;
   width: 120px;
-  margin-top: 10%;
+  margin-top: 9%;
   align-items: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5%;
 }
 
 .aboutmehead {
@@ -232,6 +239,19 @@ a:hover {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+.link-about {
+  /* letter-spacing: 1px; */
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: black;
+}
+
+.link-about > i {
+  left: 166px;
+  bottom: 3px;
+}
 /* ---- PORTFOLIO----  */
 .portfolio {
   min-height: 76vh;
@@ -244,13 +264,14 @@ a:hover {
 
 .project-content {
   background: #80c0ca;
+  min-height: 86.7vh;
 }
 
 .ProjectName {
   color: #ffffff;
-  /* margin-top: 100px; */
-  font-size: 0.9rem;
-  font-weight: 400;
+  margin-top: 150px;
+  font-size: 1rem;
+  font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif !important;
@@ -259,7 +280,7 @@ a:hover {
   font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  color: rgba(252, 252, 252, 0.336);
+  color: rgba(252, 252, 252, 0.541);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -291,7 +312,7 @@ a:hover {
 }
 
 .links-port {
-  margin-top: 80px;
+  margin-top: 15px;
 }
 
 .links-port > li {
@@ -350,7 +371,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
@@ -360,12 +381,11 @@ a:hover {
 }
 
 .about-inner-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  color: rgb(126, 126, 126);
-  line-height: 1.2rem;
-  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  line-height: 1.4rem;
+  letter-spacing: 0.8px;
 }
 
 input[type='text'].form-control::-webkit-input-placeholder,
@@ -374,13 +394,12 @@ textarea.form-control::-webkit-input-placeholder {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 100;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   border-width: 0px;
   border: none;
   box-shadow: none;
-  color: gray;
   margin: auto;
-  color: rgb(73, 73, 73);
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -415,7 +434,8 @@ textarea.form-control::-webkit-input-placeholder {
   color: black;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
+  padding: 15px 10px;
 }
 .fa-angle-right {
   position: absolute;
