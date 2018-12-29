@@ -74,12 +74,12 @@ a:hover {
 
 .left-icon-top {
   position: absolute;
-  top: 15px;
+  top: 30px;
   left: 0;
 }
 .right-icons-top {
   position: absolute;
-  top: 7px;
+  top: 25px;
   right: 0px;
 }
 
@@ -160,7 +160,7 @@ a:hover {
 
 .main-content {
   background: linear-gradient(to right, #62aeb7 0%, #a7ebf6 100%);
-  min-height: 78vh;
+  min-height: 77vh;
   background-size: cover;
 }
 .main-heading {
@@ -212,7 +212,7 @@ a:hover {
 .about-section {
   background: #fafafa;
   background-size: cover;
-  min-height: 78vh;
+  min-height: 77vh;
 }
 
 .about-section-inner {
@@ -467,51 +467,229 @@ textarea.form-control::-webkit-input-placeholder {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .main-heading {
-    font-size: 0.85rem;
-    margin-top: 150px;
-  }
-
-  .closing-toggle {
-    right: 40px;
+    margin-top: 130px;
   }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .title {
-    margin-left: 80px;
-  }
   .main-content {
-    min-height: 70vh;
+    background: linear-gradient(to right, #62aeb7 0%, #a7ebf6 100%);
+    min-height: 65vh;
+    background-size: cover;
   }
-  .main-heading {
-    margin-top: 190px;
+  .title {
+    font-weight: 700;
+    position: absolute;
+    left: 320px;
+  }
+
+  .btn-white-1 {
+    margin-top: 0px;
+
+    font-weight: 400;
+    font-size: 0.8rem;
+    display: inline-block;
+    width: 35%;
+    padding: 20px 0;
+  }
+  .btn-secondary-1 {
+    margin-top: 0px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    display: inline-block;
+    width: 35%;
+    padding: 20px 0;
+  }
+  .navbar-collapse {
+    padding: 0;
+  }
+  .container-footer {
+    padding: 20px 0;
   }
   .about-section {
-    min-height: 70vh;
+    min-height: 65vh;
   }
+
   .about-section-inner {
-    padding-bottom: 40px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    line-height: 1.2rem;
+    letter-spacing: 0.8px;
+    text-align: center;
   }
-  .test-new {
-    min-height: 70vh;
+  .link-about {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: black;
+  }
+  .link-about > i {
+    left: 200px;
+    bottom: 2px;
+  }
+  .project-content {
+    background: #80c0ca;
+    min-height: 65vh;
+    padding: 100px 60px 0px 60px;
+  }
+  .ProjectName {
+    color: #ffffff;
+    margin-top: 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  .text-container-inner {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 1px;
+  }
+  .right-test {
+    padding: 80px 0;
+    text-align: center;
+  }
+  .menu__link {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 8px 0;
+    font-weight: 100;
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    letter-spacing: 2px;
   }
   .right-1 {
-    min-height: 70vh;
-  }
-  .title-contact {
-    margin-top: 60px !important;
-  }
-  .menu__list {
-    text-align: center;
-    margin-top: 60px !important;
-  }
-  .overlay-content-section {
-    padding: 70px 100px 0 100px !important;
+    min-height: 65vh;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .main-content {
+    min-height: 73vh;
+  }
+  .title {
+    font-weight: 700;
+    position: absolute;
+    left: 530px;
+  }
+  .main-heading {
+    color: #ffffff;
+    margin-top: 18.1%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  .paragraph-inner {
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .btn-white-1 {
+    margin-top: 0px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    display: inline-block;
+    width: 24%;
+    padding: 10px 0;
+  }
+  .btn-secondary-1 {
+    margin-top: 0px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    display: inline-block;
+    width: 24%;
+    padding: 10px 0;
+  }
+  .navbar-collapse {
+    padding: 0;
+  }
+  .container-footer {
+    padding: 20px 0;
+  }
+  .about-section {
+    min-height: 73vh;
+    padding: 30px;
+  }
+
+  .about-section-inner {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .link-about {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: black;
+    margin-top: 40px;
+  }
+  .link-about > i {
+    left: 200px;
+    bottom: 2px;
+  }
+  .project-content {
+    background: #80c0ca;
+    min-height: 73vh;
+    padding: 100px 60px 0px 60px;
+  }
+  .ProjectName {
+    color: #ffffff;
+    margin-top: 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  .text-container-inner {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 1px;
+  }
+  .right-test {
+    padding: 80px 0;
+    text-align: center;
+  }
+  .menu__link {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 8px 0;
+    font-weight: 100;
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  .right-1 {
+    min-height: 73vh;
+    padding: 0 80px;
+  }
+  .contact-section {
+    margin-top: 60px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
