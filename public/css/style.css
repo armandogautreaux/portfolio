@@ -68,6 +68,9 @@ a:hover {
   font-size: 0.7rem;
   color: rgb(0, 0, 0);
 }
+.navbar-collapse {
+  padding: 10px 20px 20px 20px;
+}
 
 .left-icon-top {
   position: absolute;
@@ -114,7 +117,7 @@ a:hover {
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif !important;
   color: #a5a5a5;
-  position: absolute;
+  position: relative;
   left: 0px;
   bottom: 0px;
   width: 100%;
@@ -157,7 +160,7 @@ a:hover {
 
 .main-content {
   background: linear-gradient(to right, #62aeb7 0%, #a7ebf6 100%);
-  min-height: 86.7vh;
+  min-height: 78vh;
   background-size: cover;
 }
 .main-heading {
@@ -209,7 +212,7 @@ a:hover {
 .about-section {
   background: #fafafa;
   background-size: cover;
-  min-height: 86.7vh;
+  min-height: 78vh;
 }
 
 .about-section-inner {
@@ -222,13 +225,13 @@ a:hover {
 }
 .about-section-inner > img {
   border-radius: 50%;
-  width: 120px;
+  width: 100px;
   margin-top: 9%;
   align-items: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5%;
+  margin-bottom: 9%;
 }
 
 .aboutmehead {
@@ -254,7 +257,7 @@ a:hover {
 }
 /* ---- PORTFOLIO----  */
 .portfolio {
-  min-height: 76vh;
+  height: auto;
 }
 
 .overlay-content-section img {
@@ -264,12 +267,12 @@ a:hover {
 
 .project-content {
   background: #80c0ca;
-  min-height: 86.7vh;
+  min-height: 78vh;
 }
 
 .ProjectName {
   color: #ffffff;
-  margin-top: 150px;
+  margin-top: 90px;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -447,8 +450,8 @@ textarea.form-control::-webkit-input-placeholder {
 .closing-toggle {
   color: rgb(255, 255, 255);
   position: absolute;
-  right: 20px;
-  top: 110px;
+  right: 10px;
+  top: 90px;
   z-index: 10;
   font-weight: 300;
   font-size: 0.9rem;
