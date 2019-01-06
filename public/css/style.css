@@ -485,7 +485,7 @@ textarea.form-control::-webkit-input-placeholder {
   color: #373640;
   position: absolute;
   right: 10px;
-  top: 50px;
+  top: 85px;
   z-index: 10;
   font-weight: 300;
   font-size: 0.9rem;
@@ -521,7 +521,7 @@ textarea.form-control::-webkit-input-placeholder {
     color: #d8d8d8 !important;
   }
   .main-heading {
-    font-size: 7.5rem;
+    font-size: 7rem;
   }
   .navbar {
     background: #373640;
