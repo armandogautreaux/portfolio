@@ -185,7 +185,7 @@ a:hover {
 .btn-rounded-gold {
   border: none;
   background: #c0b283;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-right: 30px;
   font-weight: 500;
   font-size: 0.7rem;
@@ -526,6 +526,10 @@ textarea.form-control::-webkit-input-placeholder {
   .navbar {
     background: #373640;
     border-bottom: 5px solid #c0b28383;
+  }
+  .btn-rounded-gold {
+    margin-top: 0px;
+    margin-right: 10px;
   }
 
   .project-content {
