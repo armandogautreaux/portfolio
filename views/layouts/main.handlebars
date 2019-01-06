@@ -24,95 +24,89 @@
 
 <body>
 
-  <!-- Top Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light py-4 bg-white flex-row container">
+  <div class="">
+    <div class="row">
 
-    <!-- Left Icon -->
-    <span class="navbar-text d-none d-md-block">
-      <small class="left-icon-top">
-        <a href="/"><i class="fas fa-home"></i></a>
-      </small>
-    </span>
-
-    <!-- Brand -->
-    <a class="navbar-brand mx-md-auto mr-auto" href="/">
-      ARMANDO GAUTREAUX<small class="title py-0">PORTFOLIO</small>
-    </a>
-
-    <!-- Right Icons -->
-    <div class="navbar-text d-none d-md-block right-icons-top">
-      <a href="https://github.com/armandogautreaux" class="mx-1" target="_blank">
-        <i class="fab fa-github-square"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/armando-gautreaux-78932059/" class="mx-1" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
+      <div class="col-sm-12 col-md-10 offset-md-2">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+          <a class="navbar-brand" href="/"> ARMANDO GAUTREAUX</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/portfolio">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-    <button class="navbar-toggler ml-lg-0" type="button" data-toggle="collapse" data-target="#navbarContent">
-      <i class="fas fa-bars"></i>
-    </button>
-  </nav>
+  </div>
 
-  <!-- Bottom Navbar -->
-  <nav class="navbar p-0  navbar-expand-md navbar-light bg-white second-nav container">
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav mx-md-auto mx-0 w-50 align-items-start nav-fill">
-        <li class="nav-item">
-          <a class="nav-link active" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/portfolio">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-      </ul>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1 sidebar d-none d-md-block">
+        <ul class="nav text-center nav-left">
+          <li class="nav-item">
+            <a class="nav-link n-i-t" href="https://www.linkedin.com/in/armando-gautreaux-78932059/" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link n-i-t" href="https://github.com/armandogautreaux" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link n-i-t" href="/contact"><i class="far fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </nav>
-
+  </div>
 
   {{{ body }}}
 
   <!-- Footer -->
-  <footer class="footer py-2">
-    <div class="container container-footer">
-      <ul class="nav footer-ul">
-        <li class="nav-item footer-li pl-0 ">
-          <small class="nav-link navlink-bo-1 pl-0">
-            &copy; <span id="year"></span> SMU Certified Developer
-          </small>
-        </li>
-        <li class="nav-item footer-li ml-auto d-block d-md-none">
-          <small class="nav-link navlink-bo-1">
-            <a href="https://github.com/armandogautreaux" class="mx-1" target="_blank">
-              <i class="fab fa-github-square"></i>
-            </a>
-          </small>
-        </li>
-        <li class="nav-item footer-li d-block d-md-none">
-          <small class="nav-link navlink-bo-1  pl-0 pr-0">
-            <a href="https://www.linkedin.com/in/armando-gautreaux-78932059/" target="_blank" class="mx-1">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </small>
-        </li>
-        <li class="nav-item footer-li ml-md-auto d-none d-md-block">
-          <a class="nav-link" href="https://www.linkedin.com/in/armando-gautreaux-78932059/" target="_blank">Linkedin</a>
-        </li>
-        <li class="nav-item footer-li d-none d-md-block">
-          <a class="nav-link" href="https://github.com/armandogautreaux" target="_blank">Github</a>
-        </li>
-        <li class="nav-item footer-li d-none d-md-block">
-          <a class="nav-link pr-0" href="/contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+  <footer class="footer d-block d-md-none container-footer ">
+    <ul class="nav footer-ul">
+      <li class="nav-item footer-li">
+        <small class="nav-link navlink-bo-1">
+          &copy; <span id="year"></span> All Rights Reserved
+        </small>
+      </li>
+      <li class="nav-item footer-li ml-auto d-block d-md-none">
+        <small class="nav-link navlink-bo-1">
+          <a href="https://github.com/armandogautreaux" class="mx-1" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </small>
+      </li>
+      <li class="nav-item footer-li d-block d-md-none">
+        <small class="nav-link navlink-bo-1">
+          <a href="https://www.linkedin.com/in/armando-gautreaux-78932059/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </small>
+      </li>
+      <li class="nav-item footer-li d-block d-md-none">
+        <small class="nav-link navlink-bo-1">
+          <a href="/contact" target="_blank">
+            <i class="far fa-envelope"></i>
+          </a>
+        </small>
+      </li>
+    </ul>
   </footer>
-
-
 
   <!--MODAL-->
   <div class="modal" id="myModal">

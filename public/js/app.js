@@ -221,46 +221,46 @@ function setNewValues(project) {
 
 $('.menu__link1').hover(function() {
   setNewValues(project1);
-  $('.overlay-content-section').css('background-color', '#80c0ca');
+  // $('.overlay-content-section').css('background-color', '#80c0ca');
 });
 
 $('.menu__link2').hover(function() {
   setNewValues(project2);
-  $('.overlay-content-section').css('background-color', '#657881');
+  // $('.overlay-content-section').css('background-color', '#657881');
 });
 
 $('.menu__link3').hover(function() {
   setNewValues(project3);
-  $('.overlay-content-section').css('background-color', '#5d8fac');
+  // $('.overlay-content-section').css('background-color', '#5d8fac');
 });
 
 $('.menu__link4').hover(function() {
   setNewValues(project4);
-  $('.overlay-content-section').css('background-color', '#ec8466');
+  // $('.overlay-content-section').css('background-color', '#ec8466');
 });
 $('.menu__link5').hover(function() {
   setNewValues(project5);
-  $('.overlay-content-section').css('background-color', '#4c5c7a');
+  // $('.overlay-content-section').css('background-color', '#4c5c7a');
 });
 $('.menu__link6').hover(function() {
   setNewValues(project6);
-  $('.overlay-content-section').css('background-color', '#4b668a');
+  // $('.overlay-content-section').css('background-color', '#4b668a');
 });
 $('.menu__link7').hover(function() {
   setNewValues(project7);
-  $('.overlay-content-section').css('background-color', '#9dafc7');
+  // $('.overlay-content-section').css('background-color', '#9dafc7');
 });
 $('.menu__link8').hover(function() {
   setNewValues(project8);
-  $('.overlay-content-section').css('background-color', '#45aae9');
+  // $('.overlay-content-section').css('background-color', '#45aae9');
 });
 $('.menu__link9').hover(function() {
   setNewValues(project9);
-  $('.overlay-content-section').css('background-color', '#3c86c3');
+  // $('.overlay-content-section').css('background-color', '#3c86c3');
 });
 $('.menu__link10').hover(function() {
   setNewValues(project10);
-  $('.overlay-content-section').css('background-color', '#799cc1');
+  // $('.overlay-content-section').css('background-color', '#799cc1');
 });
 
 function displayImages() {
