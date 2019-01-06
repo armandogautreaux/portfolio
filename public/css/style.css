@@ -281,7 +281,7 @@ a:hover {
 .project-content {
   background-color: #ffffff;
   min-height: 85vh;
-  padding: 70px 25px 25px 25px;
+  padding: 70px 30px 25px 30px;
 }
 
 .ProjectName {
@@ -296,11 +296,11 @@ a:hover {
 }
 .text-container-inner {
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.2rem;
-  font-size: 0.7rem;
-  font-weight: 300;
+  font-size: 0.8rem;
+  font-weight: 400;
   color: rgb(0, 0, 0);
-  letter-spacing: 1px;
+  line-height: 1.4rem;
+  letter-spacing: 0.8px;
 }
 .subtitle {
   font-family: 'Roboto', sans-serif;
@@ -538,7 +538,7 @@ textarea.form-control::-webkit-input-placeholder {
   }
   .right-test {
     min-height: 70vh;
-    padding: 50px 75px 0 50px;
+    padding-top: 50px;
   }
   .about-section {
     padding: 70px;

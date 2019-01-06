@@ -1,3 +1,4 @@
+// Global Variables
 var numberPage = $('.number-page');
 var ProjectName = $('.ProjectName');
 var yearText = $('.text-container-inner-plus');
@@ -7,8 +8,8 @@ var img3 = $('.img-inner3');
 var textInner = $('.text-container-inner ');
 var btn1 = $('.under-1');
 var btn2 = $('.under-2');
-// var srcimg = ['/images/img01.jpg', '/images/img2.jpg', '/images/img03.jpg'];
 
+// Project Content
 var project1 = {
   name: 'Organic Fitness World',
   info: 'ONLINE STORE - 2018',
@@ -160,6 +161,8 @@ var project10 = {
     'https://armandogautreaux.github.io/unit-4-game/'
   ]
 };
+
+// The next function set new values of every project through a hover event
 function setNewValues(project) {
   $('.overlay-content-section').empty();
 
@@ -221,48 +224,39 @@ function setNewValues(project) {
 
 $('.menu__link1').hover(function() {
   setNewValues(project1);
-  // $('.overlay-content-section').css('background-color', '#80c0ca');
 });
 
 $('.menu__link2').hover(function() {
   setNewValues(project2);
-  // $('.overlay-content-section').css('background-color', '#657881');
 });
 
 $('.menu__link3').hover(function() {
   setNewValues(project3);
-  // $('.overlay-content-section').css('background-color', '#5d8fac');
 });
 
 $('.menu__link4').hover(function() {
   setNewValues(project4);
-  // $('.overlay-content-section').css('background-color', '#ec8466');
 });
 $('.menu__link5').hover(function() {
   setNewValues(project5);
-  // $('.overlay-content-section').css('background-color', '#4c5c7a');
 });
 $('.menu__link6').hover(function() {
   setNewValues(project6);
-  // $('.overlay-content-section').css('background-color', '#4b668a');
 });
 $('.menu__link7').hover(function() {
   setNewValues(project7);
-  // $('.overlay-content-section').css('background-color', '#9dafc7');
 });
 $('.menu__link8').hover(function() {
   setNewValues(project8);
-  // $('.overlay-content-section').css('background-color', '#45aae9');
 });
 $('.menu__link9').hover(function() {
   setNewValues(project9);
-  // $('.overlay-content-section').css('background-color', '#3c86c3');
 });
 $('.menu__link10').hover(function() {
   setNewValues(project10);
-  // $('.overlay-content-section').css('background-color', '#799cc1');
 });
 
+// The next funciton display images of every project through a click event
 function displayImages() {
   event.preventDefault();
   if ($('.gallery').is(':visible'))
@@ -271,150 +265,15 @@ function displayImages() {
 }
 $(document).on('click', '#btn-display', displayImages);
 
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth() + 1; //January is 0!
-var yyyy = today.getFullYear();
-
-if (dd < 10) {
-  dd = '0' + dd;
-}
-
-if (mm < 10) {
-  mm = '0' + mm;
-}
-
-today = mm + '/' + dd + '/' + yyyy;
-$('#date').text(today);
-
-$('.menu__linkAbout').hover(function() {
-  event.preventDefault();
-  $('.overlay-content-section').empty();
-  var tittlehead = $('<p>')
-    .text('About me')
-    .addClass('tittlehead mt-5');
-  // var imgProfile = $('<img>')
-  //   .attr('src', '/Assets/images/profile.jpg')
-  //   .addClass('imgProfile mx-auto');
-
-  var textAbout1 = $('<p>')
-    .text(
-      ' Hello, my name is Armando Gautreaux, I am a full-stack JS Developer with experience in all 5 stages of the web development process including: information gathering, planning, design, development, testing and delivery. Some of my Coding Skills include Vanilla JavaScript, JQuery, Node, Express, MySQL, Mongo, Handlebars and React. '
-    )
-    .addClass('mt-5 mb-4');
-  var textAbout2 = $('<p>').text(
-    ' I also have a modest knowledge in Photoshop, Illustrator and Sketch, some of my certifications in Design include  Typography and Fundamentals of Graphic Design for CalArts. I invite you to visit my project seccion and read a small description about each of them, you can even visit each site (live) or see my code through Github. I am so thankfull that you spend the time reading my profile. Wishing you the best of luck. '
-  );
-  // .addClass('text-center');
-
-  var dateToday = $('<p>').attr('id', 'date');
-
-  var innerContainerAbout = $('<div>').addClass(
-    'about-inner-text mt-0  mb-3 mx-auto'
-  );
-  innerContainerAbout.append(
-    tittlehead,
-    textAbout1,
-    textAbout2,
-
-    dateToday
-  );
-  var containerAbout = $('<div>').addClass('container-inner-about');
-  containerAbout.append(innerContainerAbout);
-  $('.overlay-content-section').css('background-color', 'white');
-  $('.overlay-content-section').append(containerAbout);
-});
-
-$('.menu__linkContact').hover(function() {
-  event.preventDefault();
-  $('.overlay-content-section').empty();
-  var formDiv = $('<div>').addClass('mx-5 p-5 div-form');
-  var headingText = $('<p>')
-    .text('Reach out')
-    .addClass('tittlehead');
-  var textMsg = $('<p>')
-    .text(
-      'I would like to hear from you. Please send me a message by filling out the form bellow and I will get back to you shortly.'
-    )
-    .addClass('about-inner-text');
-
-  var formContent = $('<form>')
-    .addClass('mt-3')
-    .attr('id', 'contact-form2');
-
-  var nameFormGroup = $('<div>')
-    .addClass('form-group pt-0 mt-0')
-    .append(
-      $('<input>')
-        .attr('type', 'text')
-        .attr('name', 'name')
-        .attr('placeholder', 'Name')
-        .addClass('form-control')
-    );
-  var emailFormGroup = $('<div>')
-    .addClass('form-group pt-0 mt-0')
-    .append(
-      $('<input>')
-        .attr('type', 'email')
-        .attr('name', 'email')
-        .attr('placeholder', 'Email')
-        .addClass('form-control')
-    );
-
-  var topic = $('<div>')
-    .addClass('form-group')
-    .append(
-      $('<input>')
-        .attr('type', 'text')
-        .attr('name', 'subject')
-        .attr('placeholder', 'Topic')
-        .addClass('form-control')
-    );
-
-  var textFormGroup = $('<div>')
-    .addClass('form-group')
-    .append(
-      $('<textarea>')
-        .attr('type', 'text')
-        .attr('name', 'message')
-        .attr('placeholder', 'Message')
-        .addClass('form-control')
-    );
-  var buttonFooter = $('<button>')
-    .addClass('btn btn-secondary mt-3 btn-block')
-    .attr('type', 'submit')
-    .attr('name', 'submit')
-    .text('SUBMIT');
-  var altMsg = $('<small>')
-    .text('For other inquieries, reach out to info@armandogautreaux.com')
-    .addClass('d-block mt-5  text-muted');
-  formContent.append(
-    nameFormGroup,
-
-    emailFormGroup,
-    topic,
-    textFormGroup,
-    buttonFooter
-  );
-  formDiv.append(
-    headingText,
-    textMsg,
-    // secondHeading,
-    // emailheading,
-    formContent,
-    altMsg
-  );
-
-  $('.overlay-content-section').css('background-color', 'white');
-  $('.overlay-content-section').append(formDiv);
-});
-
+// The next function is activated once a email request is send it and the server has receive it.
 $('#contact-form').submit(event => {
   event.preventDefault();
   if ($('[name="name"]').val() == '') {
     alert('Please enter your Full Name');
-  } else if ($('email').val() == '') {
+  } else if ($('[name="email"]').val() == '') {
     alert('Please enter your a valid email');
+  } else if ($('[name="message"]').val() == '') {
+    alert('Please enter your message');
   } else {
     const newContact = {
       name: $('[name="name"]')
@@ -431,18 +290,12 @@ $('#contact-form').submit(event => {
         .trim()
     };
 
-    //4. We call our post (ajax) method to send our object to the back-end
     $.post('/send', newContact).done(function(data) {
-      //After our back-end receive the object and proccess its logic, send back the data to display to the user
       if (data) {
         $('[name="name"]').val(''),
           $('[name="email"]').val(''),
           $('[name="subject"]').val(''),
           $('[name="message"]').val('');
-
-        //If our logic was correct, the next info is gonna be displayed to the user through the hidden Boostrap modal
-        // $('#contactModal').modal('hide');
-        // $('#contactModal').toggle();
         $('#myModal').modal('toggle');
         $('#modalBody').text(
           'Dear ' +
@@ -454,44 +307,27 @@ $('#contact-form').submit(event => {
   }
 });
 
+// The next function shows and hice the list of projects in small screens.
+
 $(document.body).on('click', '.closing-toggle', function() {
   var state = $(this).attr('data-state');
 
   if (state === 'open') {
+    $(this).empty();
     $('.right-test').hide();
-    $(this).text('Projects  ');
+    var titleToggle = $('<small>').text('Projects   ');
     var icon = $('<i>');
     icon.addClass('fas');
-    icon.addClass('fa-external-link-alt');
-    $(this).append(icon);
+    icon.addClass('fa-expand-arrows-alt');
+    $(this).append(titleToggle, icon);
     $(this).attr('data-state', 'close');
   } else {
     $('.right-test').show();
+    $(this).empty();
     var icon = $('<i>');
-    $(this).text('');
     icon.addClass('fas');
     icon.addClass('fa-times');
     $(this).append(icon);
     $(this).attr('data-state', 'open');
   }
 });
-
-// function checkWidth(init) {
-//   if ($(window).width() < 768) {
-//     $('.footer-ul').addClass('justify-content-center');
-//   } else {
-//     if (!init) {
-//       $('.footer-ul').removeClass('justify-content-center');
-//       $('.container-footer').removeClass('d-flex');
-//       // $('.margin-left-auto').addClass('ml-auto');
-//       $('.container-footer').addClass('px-0');
-//       $('.navlink-1-bo').addClass('ml-0 pl-0');
-//     }
-//   }
-// }
-
-// checkWidth(true);
-
-// $(window).resize(function() {
-//   checkWidth(false);
-// });
