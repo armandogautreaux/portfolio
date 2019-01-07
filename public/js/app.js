@@ -19,7 +19,7 @@ var project1 = {
     'public/images/img03.jpg'
   ],
   text:
-    'Online Store specialized in organic products for athlets such as groceries, supplements and clothing. This full stack app features: MongoDB, Express, React, Redux, NodeJS, Sass, ReactStrap, and Passport JWT.',
+    'Online Store specialized in organic products for athletes such as groceries, supplements and clothing. This full stack app features: MongoDB, Express, React, Redux, NodeJS, Sass, ReactStrap, and Passport JWT.',
   hrefS: [
     'https://github.com/igorcweb/online-store',
     'https://organic-fitness-world.herokuapp.com/'
@@ -35,7 +35,7 @@ var project2 = {
     'public/images/img06.jpg'
   ],
   text:
-    'Full-Stack App  that accomplishes most common functions of a local Airline Company such as booking tickets, see reservations, cancel tickets and, search for an specific flight status. This App feautures MySQL, Handlebars, Node.Js, Express.JS and BodyParser.',
+    'Full-Stack App  that accomplishes most common functions of a local Airline Company such as booking tickets, see reservations, cancel tickets and, search for an specific flight status. This App features MySQL, Handlebars, Node.Js, Express.JS and BodyParser.',
   hrefS: [
     'https://github.com/uta200105/FlyAway',
     'https://flyawaytx.herokuapp.com/'
