@@ -19,7 +19,7 @@ var project1 = {
     'public/images/img03.jpg'
   ],
   text:
-    'Online Store specialized in organic products for athletes such as groceries, supplements and clothing. This full-stack app is the result of my final project from the SMU Coding Program and showcase my contribution as Front-End developer. It features: React, Sass, ReactStrap, Express, MongoDB, Redux, NodeJS, and Passport JWT.',
+    'Online Store specialized in organic products for athletes such as groceries, supplements, and clothing. This full stack app is the result of the final project from the SMU Coding Program and showcases my contribution as Front-End Developer. It features React, Sass, ReactStrap, Express, MongoDB, Redux, NodeJS, and Passport JWT.',
   hrefS: [
     'https://github.com/igorcweb/online-store',
     'https://organic-fitness-world.herokuapp.com/'
@@ -35,7 +35,7 @@ var project2 = {
     'public/images/img06.jpg'
   ],
   text:
-    'Local Airline App that allows the user to book tickets, look for reservations, cancel purchased tickets and, search for an specific flight. This Application represents the outcome of my second group project from the SMU Coding Program and demostrates my modest knowledge as Back-End Developer. It features MySQL, Handlebars, Node.Js, Express.JS and BodyParser.',
+    'Local Airline App that allows the user to book tickets, look for reservations, cancel purchased tickets and, search for a specific flight. This Application represents the outcome of my second group project from the SMU Coding Program and demonstrates my modest knowledge as Back-End Developer. It features MySQL, Handlebars, Node.Js, Express.JS and BodyParser.',
   hrefS: [
     'https://github.com/uta200105/FlyAway',
     'https://flyawaytx.herokuapp.com/'
