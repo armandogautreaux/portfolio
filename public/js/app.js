@@ -12,14 +12,14 @@ var btn2 = $('.under-2');
 // Project Content
 var project1 = {
   name: 'Organic Fitness World',
-  info: 'ONLINE STORE - 2018',
+  info: 'Role: Front-End Developer',
   imgs: [
     'public/images/img01.jpg',
     'public/images/img02.jpg',
     'public/images/img03.jpg'
   ],
   text:
-    'Online Store specialized in organic products for athletes such as groceries, supplements and clothing. This full stack app features: MongoDB, Express, React, Redux, NodeJS, Sass, ReactStrap, and Passport JWT.',
+    'Online Store specialized in organic products for athletes such as groceries, supplements and clothing. This full-stack app is the result of my final project from the SMU Coding Program and showcase my contribution as Front-End developer. It features: React, Sass, ReactStrap, Express, MongoDB, Redux, NodeJS, and Passport JWT.',
   hrefS: [
     'https://github.com/igorcweb/online-store',
     'https://organic-fitness-world.herokuapp.com/'
@@ -28,14 +28,14 @@ var project1 = {
 
 var project2 = {
   name: 'FlyAway',
-  info: 'Airline App - 2018',
+  info: 'Role: Back-End Developer',
   imgs: [
     'public/images/img04.jpg',
     'public/images/img05.jpg',
     'public/images/img06.jpg'
   ],
   text:
-    'Full-Stack App  that accomplishes most common functions of a local Airline Company such as booking tickets, see reservations, cancel tickets and, search for an specific flight status. This App features MySQL, Handlebars, Node.Js, Express.JS and BodyParser.',
+    'Local Airline App that allows the user to book tickets, look for reservations, cancel purchased tickets and, search for an specific flight. This Application represents the outcome of my second group project from the SMU Coding Program and demostrates my modest knowledge as Back-End Developer. It features MySQL, Handlebars, Node.Js, Express.JS and BodyParser.',
   hrefS: [
     'https://github.com/uta200105/FlyAway',
     'https://flyawaytx.herokuapp.com/'
@@ -43,14 +43,14 @@ var project2 = {
 };
 var project3 = {
   name: 'Newstaker',
-  info: 'Scraper - 2018',
+  info: 'Role: Full-Stack Developer',
   imgs: [
     'public/images/img07.jpg',
     'public/images/img08.jpg',
     'public/images/img09.jpg'
   ],
   text:
-    "This Full-Stack App let users view and leave comments on the latest news. Newstaker uses Mongoose and Cheerio to scrape news from the NYTimes and storage them in it's own database.",
+    "Newstaker is Full-Stack App that let users view and leave comments on the latest news, it uses Mongoose and Cheerio to scrape news from the NYTimes and storage them in it's own database.",
   hrefS: [
     'https://github.com/armandogautreaux/newstaker',
     'https://newstaker.herokuapp.com/'
@@ -58,14 +58,14 @@ var project3 = {
 };
 var project4 = {
   name: 'Eat-Da-Burger!',
-  info: 'HandleBars - 2018',
+  info: 'Role: Full-Stack Developer',
   imgs: [
     'public/images/img10.jpg',
     'public/images/img11.jpg',
     'public/images/img12.jpg'
   ],
   text:
-    "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app displays the burger on the left side of the page -- waiting to be devoured. The app stores every burger in a database, whether devoured or not. This app features MySQL, Node, Express and Handlebars.",
+    "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like eat so the app stores every burger in an online database. This Full-Stack App features MySQL, Node, Express and Handlebars.",
   hrefS: [
     'https://github.com/armandogautreaux/burger',
     'https://burgertx.herokuapp.com/'
@@ -73,14 +73,14 @@ var project4 = {
 };
 var project5 = {
   name: 'FriendFinder',
-  info: 'ExpressJs - 2018',
+  info: 'Role: Full-Stack Developer',
   imgs: [
     'public/images/img13.jpg',
     'public/images/img14.jpg',
     'public/images/img15.jpg'
   ],
   text:
-    "FriendFinder is basically a dating app. This full-stack site takes in results from ther users' surveys, then compare their answers with those from other users. The app will then display the name of the user with the best overall match.",
+    "FriendFinder is basically a dating app. It takes in results from ther users' surveys, then compare their answers with those from other users and display the name of the user with the best overall match. This Full-Stack App features, Node,Express, front and back-end JS and, plain HTML and CSS.",
   hrefS: [
     'https://github.com/armandogautreaux/FriendFinder',
     'https://friendfindertx.herokuapp.com/'
@@ -88,14 +88,14 @@ var project5 = {
 };
 var project6 = {
   name: 'Bamazon',
-  info: 'MySQL/Databases - 2018',
+  info: 'Role: Back-End Developer',
   imgs: [
     'public/images/img16.jpg',
     'public/images/img17.jpg',
     'public/images/img18.jpg'
   ],
   text:
-    "Bamazon is an Amazon-like storefront that runs with MySQL as Database. The app takes in orders from customers and deplete stock from the store's inventory.",
+    "Bamazon is an Amazon-like storefront that runs with MySQL as Database. This back-end app takes in orders from customers and deplete stock from the store's inventory. It features Node, front and back-end JS and, plain HTML and CSS.",
   hrefS: [
     'https://github.com/armandogautreaux/bamazon',
     'https://github.com/armandogautreaux/bamazon'
@@ -103,7 +103,7 @@ var project6 = {
 };
 var project7 = {
   name: 'Train-Scheduler',
-  info: 'Firebase/Moment.js - 2018',
+  info: 'Role: Full-Stack Developer',
   imgs: [
     'public/images/img19.jpg',
     'public/images/img20.jpg',
@@ -118,14 +118,14 @@ var project7 = {
 };
 var project8 = {
   name: 'GifTastic',
-  info: 'API Calls - 2018',
+  info: 'Role: Front-End Developer',
   imgs: [
     'public/images/img22.jpg',
     'public/images/img23.jpg',
     'public/images/img24.jpg'
   ],
   text:
-    'GifTastic is a JS App that uses the GIPHY API to make a dynamic web page that populates with gifs of your choice. In this App we call the GIPHY API and use JavaScript and jQuery to change the HTML of this site.',
+    "GifTastic is a JS App that uses the GIPHY API to make a dynamic web page that populates with gifs of the user's choice. This front-end site uses JavaScript and jQuery to change the HTML of this site.",
   hrefS: [
     'https://github.com/armandogautreaux/GifTastic',
     'https://armandogautreaux.github.io/GifTastic/'
@@ -133,14 +133,14 @@ var project8 = {
 };
 var project9 = {
   name: 'TriviaGame',
-  info: 'JSTimer - 2018',
+  info: 'Role: Front-End Developer',
   imgs: [
     'public/images/img25.jpg',
     'public/images/img26.jpg',
     'public/images/img27.jpg'
   ],
   text:
-    'Trivia Game is an App that uses JavaScript for the logic and jQuery to manipulate HTML. In this game, the App creates a trivia form with multiple choice or true/false options, from where the player will have a limited amount of time to choose from. The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.',
+    'Trivia Game is an App that uses JavaScript for the logic and jQuery to manipulate HTML. In this game, the App creates a trivia form with multiple choice or true/false options, from where the player will have a limited amount of time to choose from. The game ends when the time runs out.',
   hrefS: [
     'https://github.com/armandogautreaux/TriviaGame',
     'https://armandogautreaux.github.io/TriviaGame/'
@@ -148,14 +148,14 @@ var project9 = {
 };
 var project10 = {
   name: 'Crystal Collector',
-  info: 'jQuery Game - 2018',
+  info: 'Role: Front-End Developer',
   imgs: [
     'public/images/img28.jpg',
     'public/images/img29.jpg',
     'public/images/img30.jpg'
   ],
   text:
-    "Cristal Collector is a jQuery Game that dynamically update the HTML pages. In this App, there will be four crystals displayed as buttons on the page, the player will be shown a random number at the start of the game, when the player clicks on a crystal, it will add a specific amount of points to the player's total score. The player wins if their total score matches the random number from the beginning of the game.",
+    'Cristal Collector is a jQuery Game that dynamically update the HTML pages. In this App the player wins if their total score matches the random number from the beginning of the game.',
   hrefS: [
     'https://github.com/armandogautreaux/unit-4-game',
     'https://armandogautreaux.github.io/unit-4-game/'

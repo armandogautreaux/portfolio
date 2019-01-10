@@ -381,6 +381,9 @@ a:hover {
   line-height: 1rem;
   letter-spacing: 0.8px;
 }
+.menu__link:hover {
+  color: rgb(255, 255, 255);
+}
 .menu__list {
   list-style-type: none;
 }
