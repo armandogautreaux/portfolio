@@ -83,6 +83,13 @@ a:hover {
   text-transform: uppercase;
 }
 
+.link-custom {
+  color: rgb(105, 105, 105);
+  font-weight: 700;
+}
+.link-custom:hover {
+  color: #c0b283;
+}
 .navbar-toggler {
   border: none;
 }
@@ -422,6 +429,13 @@ a:hover {
   letter-spacing: 0.8px;
 }
 
+.about-inner-text-contact-footer {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  line-height: 1.4rem;
+  /* letter-spacing: 0.8px; */
+}
 input[type='text'].form-control::-webkit-input-placeholder,
 input[type='email'].form-control::-webkit-input-placeholder,
 textarea.form-control::-webkit-input-placeholder {
@@ -547,7 +561,7 @@ textarea.form-control::-webkit-input-placeholder {
     padding: 70px;
   }
   .contact-section {
-    padding: 70px;
+    padding: 70px 70px 55px 70px;
   }
 }
 /* Large devices (desktops, 992px and up) */
